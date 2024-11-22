@@ -1,0 +1,178 @@
+*{
+    margin: 0 auto;
+    font-family:'Courier New', Courier, monospace;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    width: 100%;
+
+}
+body{
+    width: 100%;
+    background-color: var(--cor-fundo);
+}
+:root{
+    --cor-fundo: #dedede;
+    --cor-cabecario: #354077;
+}
+header.header-index{
+    width: 100%;
+    background-color: var(--cor-cabecario);
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.header-index .img-logo{
+    max-width: 5%;
+    margin: 0;
+    cursor: pointer;
+    
+}
+#nome-empresa{
+    margin: 0 10px;
+    color: #f1f1f1;
+    font-size: 2.2rem;
+    font-family: "Chakra Petch", sans-serif;
+    cursor:default;
+}
+.nav-header-index{
+    display: flex;
+    justify-content: end;
+    text-align: end;
+    align-items: end;
+    width: 100%;
+    margin-right: 30px;
+}
+.nav-header-index a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    font-family: 'Oswald', sans-serif;
+    transition: 200ms ease
+}
+.nav-header-index a:hover{
+    opacity: 0.9;
+    color:orange;
+}
+.main-index{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 4rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.h1-main{
+    opacity: 1;
+    transition: 200ms opacitiy ease-in-out;
+    font-size: 3rem;
+    
+}
+
+.main-index h1, .main-index h2{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #0e0e0e;
+    margin-top: 10px;
+}
+.main-img{
+    max-width: 30%;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.texto{
+    margin-top: 10px;
+    font-family: 'Oswald',sans-serif;
+    font-size: 1.4rem;
+}
+li.texto{
+    margin: 3px;
+    text-align: start;
+}
+.metade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    flex: 1;
+
+}
+#metade1{
+    justify-content: start;
+    
+}
+.main-pretao{
+    width: 90%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: row;
+    animation: altura 2s ease-in;
+
+}
+div.pretao{
+    background-color: #0e0e0e;
+    color: #f1f1f1;
+    font-family: "Chakra Petch", sans-serif;
+    border-radius:20px;
+    padding: 20px;
+    
+    
+}
+/*.typing{
+    white-space: nowrap; /* Evita quebra de linha 
+    overflow: hidden; /* Esconde o texto extra 
+    border-right: 2px solid white; /* Simula o cursor 
+    display: inline-block; /* Necessário para animação de width 
+    animation: typing 5s steps(60, end), blink 0.5s steps(60,end) ;
+}*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Animação de escrita */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+@keyframes altura{
+    from{
+        height: 0;
+    
+    }
+    to{
+        height: 100%;
+    }
+}
+.h2 {
+    opacity: 1;
+    transition: opacity 2s ease-in-out; /* Transição suave */
+  }
+
+  .h2.mostrar {
+    opacity: 1; /* Fica visível após o delay */
+  }
+#margem{
+    margin-top: 30px;
+}

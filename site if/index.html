@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site IF</title>
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-index">
+        <img alt="logo" class="img-logo" src="Logo.png" onclick="window.location.href = 'index.html'">
+        <p id="nome-empresa">LogicLayer
+        </p>
+        <nav class="nav-header-index">
+            <a href="">Sobre nós</a>
+            <a href="">Serviços</a>
+            <a href="">História</a>
+        </nav>
+    </header>
+    <main class="main-index" id="main">
+        <h1 class="h1-main">Quer ajuda para traduzir seus códigos python?</h1>
+        <h2 class="h2">Nossa empresa tem a solução!</h2>
+        <p class="texto">Traduzimos seu código python para outras linguagens usando nossa IA!</p>
+        <p class="texto">Venha conhecer nossa tecnologia!</p>
+        <img src="https://www.remessaonline.com.br/blog/wp-content/uploads/2023/05/ia-generativa.jpg.webp" alt="imagem legal" class="main-img">
+        <h1 class="h1-main" id="margem">
+            Como funciona?
+        </h1>
+        
+        <ol class="lista texto">
+            <li class="itens texto">Analisamos o código recebido, para certificar que não há nenhum erro.</li>
+            <li class="itens texto">Indicamos para a IA a linguagem para tradução e colocamos o código.</li>
+            <li class="itens texto">A tradução é feita e enviada para você!</li>
+
+        </ol>
+        <p class="texto">Exemplo:</p>
+    </main>
+    <main class="main-pretao">
+        
+        <div class="metade" id="metade1">
+            <p class="texto">Código em python:</p>
+            <div class="pretao">
+                <p class="texto-pretao typing">
+                    salario = int(input("Digite seu salario:"))
+                    <br>if salario < 1400 : <br> a = salario * 0.6
+                        <br> b = salario * 0.2
+                        <br> c = salario * 0.2
+                        <br>elif salario >=1400 and salario < 3600: <br> a = salario * 0.5
+                            <br> b = salario * 0.3
+                            <br> c = salario * 0.2
+                            <br>elif salario >=3600 and salario < 6200: <br> a = salario * 0.4
+                                <br> b = salario * 0.3
+                                <br> c = salario * 0.3
+                                <br>elif salario >=6200:
+                                <br> a = salario * 0.3
+                                <br> b = salario * 0.4
+                                <br> c = salario * 0.3
+                                <br>print("\n A divisao do seu salario e de: ",a," para gastos essenciais, ", b, "para
+                                lazer e ", c, " para investir")
+                </p>
+            </div>
+        </div>
+        <div class="metade">
+            <p class="texto">Traduzido para Javascript: </p>
+            <div class="pretao">
+                <p class="texto-pretao">
+                    <br>let salario = parseFloat(prompt("Digite seu salário:"));
+                    <br>let a, b, c;
+                    <br>if (salario < 1400) { <br>a=salario * 0.6;
+                        <br>b=salario * 0.2;
+                        <br>c=salario * 0.2;
+                        <br>}
+                        <br>else if (salario>= 1400 && salario < 3600) { <br>a=salario * 0.5;
+                            <br>b=salario * 0.3;
+                            <br>c=salario * 0.2;
+                            <br>}
+                            <br>else if (salario>=3600 && salario < 6200) { <br>a=salario * 0.4;
+                                <br>b=salario * 0.3;
+                                <br>c=salario * 0.3;
+                                <br>}
+                                <br>else if
+                                <br>(salario>= 6200) {
+                                <br> a = salario * 0.3;
+                                <br> b = salario * 0.4;
+                                <br> c = salario * 0.3;
+                                <br> }
+
+                                <br> console.log(
+                                `\nA divisão do seu salário é de: ${a.toFixed(2)} para gastos essenciais,
+                                ${b.toFixed(2)} para lazer e ${c.toFixed(2)} para investir.`
+                                );
+
+                </p>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+<script src="codigo.js">
+    const titulo = document.querySelector('.h2');
+
+    // Adiciona a classe "mostrar" após 2 segundos
+    setTimeout(() => {
+        titulo.classList.add('mostrar');
+    }, 2000);
+
+</script>
+
+</html>
